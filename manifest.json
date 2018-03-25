@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "CS741 Assignment1",
+  "description": "This extension detects and blocks XSS whole script injection.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icons/assign.png"
+     },
+  "permissions": ["http://*/*", "<all_urls>", "webRequest", "webRequestBlocking",  "privacy"  ],
+
+  
+"background": {
+      "scripts": [ "filter.js" ]
+   }
+
+}
